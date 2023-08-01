@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <form onsubmit="return false"onchange="exibe()" >
+        <label>Nome:</label><br>
+        <input id="txtNome"><br><br>
+        <label for="sexo">Sexo:</label><br>
+        <!-- criando opções selecionaveis -->
+
+        <select id="slcSexo">
+            <option value=""></option>
+            <option value="F">Feminino</option>
+            <option value="M">Masculino</option>
+        </select><br><br>
+
+        <label>Estado Civil:</label><br>
+
+        <select id="slcEstado" >
+            <option value=""></option>
+            <option value="C">Casado(a)</option>
+            <option value="S">Solterio(a)</option>
+            <option value="V">Viúvo(a)</option>
+        </select><br><br>
+        <!-- <div id="show" style="display: none;"> -->
+
+            <label id="lblAnos" style="display: none;">Tempo Casado(a)</label><br>
+            <input id= "txtAnos" type="number" style="display: none;" ><br><br>
+            
+        <!-- </div> -->
+        <!-- <label id="lblAnos">Tempo Casado(a)</label><br>
+            <input id="txtAnos"type="number" ><br><br> -->
+        <button id="btnEnviar" onclick="verifica()">Enviar</button>
+
+        <p id="pExibe"></p>
+    </form>
+    <script src="ex02.js"></script>
+</body>
+</html>
